@@ -1,0 +1,9 @@
+class IngredientData:
+    SECTION_NAME_BUN = 'Булки'
+    INGREDIENT_INDEX_BUN = '1'
+
+    SECTION_NAME_SAUCE = 'Соусы'
+    INGREDIENT_INDEX_SAUCE = '1'
+
+    SECTION_NAME_FILLING = 'Начинки'
+    INGREDIENT_INDEX_FILLING = '1'
