@@ -12,11 +12,11 @@ class TestOrderListPage:
     def test_order_modal(self, driver, prepare_user, prepare_user_order):
         payload = generate_user_data()
         prepare_user(payload, driver)
-        driver.refresh()
+        main_page = MainPage(driver)
+        main_page.refresh()
 
         prepare_user_order(driver)
 
-        main_page = MainPage(driver)
         order_list_page = OrderListPage(driver)
 
         main_page.click_on_close_order_modal_button()
@@ -33,11 +33,11 @@ class TestOrderListPage:
     def test_order_number_in_order_list_from_history(self, driver, prepare_user, prepare_user_order):
         payload = generate_user_data()
         prepare_user(payload, driver)
-        driver.refresh()
+        main_page = MainPage(driver)
+        main_page.refresh()
 
         prepare_user_order(driver)
 
-        main_page = MainPage(driver)
         order_list_page = OrderListPage(driver)
         profile_page = ProfilePage(driver)
 
@@ -60,9 +60,9 @@ class TestOrderListPage:
     def test_total_order_counter(self, driver, prepare_user, prepare_user_order):
         payload = generate_user_data()
         prepare_user(payload, driver)
-        driver.refresh()
-
         main_page = MainPage(driver)
+        main_page.refresh()
+
         order_list_page = OrderListPage(driver)
 
         main_page.click_on_order_list_button()
@@ -85,9 +85,9 @@ class TestOrderListPage:
     def test_today_order_counter(self, driver, prepare_user, prepare_user_order):
         payload = generate_user_data()
         prepare_user(payload, driver)
-        driver.refresh()
-
         main_page = MainPage(driver)
+        main_page.refresh()
+
         order_list_page = OrderListPage(driver)
 
         main_page.click_on_order_list_button()
@@ -110,9 +110,9 @@ class TestOrderListPage:
     def test_order_modal(self, driver, prepare_user, prepare_user_order):
         payload = generate_user_data()
         prepare_user(payload, driver)
-        driver.refresh()
-
         main_page = MainPage(driver)
+        main_page.refresh()
+
         order_list_page = OrderListPage(driver)
 
         prepare_user_order(driver)

@@ -1,5 +1,3 @@
-import time
-
 import allure
 
 from constants.ingredient_constants import IngredientData

@@ -34,3 +34,7 @@ class BasePageStellarBurger:
 
     def invisibility_of_element_located(self, locator, time=10):
         return WebDriverWait(self.driver, time).until(EC.invisibility_of_element_located(locator))
+
+    def refresh(self):
+        self.driver.refresh()
+
