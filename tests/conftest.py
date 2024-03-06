@@ -1,0 +1,1 @@
+pytest_plugins = ['fixtures.driver', 'fixtures.user', 'fixtures.user_order']
